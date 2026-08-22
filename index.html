@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekko — Portfolio Développeur</title>
+  <meta name="description" content="Portfolio d'Ekko, étudiant en BTS SIO option SLAM — projets, compétences et contact." />
+
+  <!-- Police (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#accueil" class="logo">Ekko<span class="dot">.</span></a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li><a href="#a-propos" class="nav-link">À propos</a></li>
+          <li><a href="#competences" class="nav-link">Compétences</a></li>
+          <li><a href="#projets" class="nav-link">Projets</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO / ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Étudiant en BTS SIO — option SLAM</p>
+        <h1>Salut, je suis <span class="accent">Ekko</span>.<br>Je développe des applications et des sites web.</h1>
+        <p class="hero-text">
+          En 2<sup>e</sup> année de BTS Services Informatiques aux Organisations (option Solutions Logicielles
+          et Applications Métiers) pour l'année 2026-2027. Ce portfolio présente mes projets, mes compétences
+          et mon parcours.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos" class="section">
+      <div class="container">
+        <p class="section-eyebrow">01 — Présentation</p>
+        <h2 class="section-title">À propos de moi</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actuellement en <strong>2<sup>e</sup> année de BTS SIO option SLAM</strong> (rentrée 2026),
+              je me spécialise dans le développement d'applications et de sites web. Je suis passionné par la
+              logique de programmation, la résolution de problèmes techniques et la création d'interfaces
+              claires et efficaces.
+            </p>
+            <p>
+              Ce site est codé « à la main », en HTML, CSS et JavaScript, hébergé sur Cloudflare Pages et
+              versionné sur GitHub — l'occasion de mettre en pratique un vrai workflow de développement
+              (Git, intégration continue, déploiement).
+            </p>
+          </div>
+
+          <ul class="about-facts">
+            <li><span class="fact-label">Formation</span><span>BTS SIO — option SLAM</span></li>
+            <li><span class="fact-label">Année</span><span>2<sup>e</sup> année (2026-2027)</span></li>
+            <li><span class="fact-label">Localisation</span><span>France</span></li>
+            <li><span class="fact-label">Disponibilité</span><span>Stage / Alternance</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow">02 — Compétences</p>
+        <h2 class="section-title">Ce que je sais faire</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Langages</h3>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Outils &amp; Workflow</h3>
+            <ul class="tag-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Cloudflare Pages</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Bases de données</h3>
+            <ul class="tag-list">
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>MERISE</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Savoir-être</h3>
+            <ul class="tag-list">
+              <li>Rigueur</li>
+              <li>Autonomie</li>
+              <li>Travail d'équipe</li>
+              <li>Veille technologique</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <p class="section-eyebrow">03 — Projets</p>
+        <h2 class="section-title">Mes projets</h2>
+        <p class="section-intro">
+          Une sélection de projets réalisés en cours ou en autonomie. À remplacer par tes vrais projets
+          (SAÉ, projets personnels, stages).
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb" aria-hidden="true">01</div>
+            <div class="project-body">
+              <h3>Nom du projet</h3>
+              <p>Courte description du projet : le besoin, ce que tu as développé, et le résultat obtenu.</p>
+              <ul class="tag-list tag-list-sm">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Voir le code →</a>
+                <a href="#" class="link-arrow">Démo →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb" aria-hidden="true">02</div>
+            <div class="project-body">
+              <h3>Nom du projet</h3>
+              <p>Courte description du projet : le besoin, ce que tu as développé, et le résultat obtenu.</p>
+              <ul class="tag-list tag-list-sm">
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Voir le code →</a>
+                <a href="#" class="link-arrow">Démo →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb" aria-hidden="true">03</div>
+            <div class="project-body">
+              <h3>Nom du projet</h3>
+              <p>Courte description du projet : le besoin, ce que tu as développé, et le résultat obtenu.</p>
+              <ul class="tag-list tag-list-sm">
+                <li>Python</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Voir le code →</a>
+                <a href="#" class="link-arrow">Démo →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow">04 — Contact</p>
+        <h2 class="section-title">Discutons</h2>
+        <p class="section-intro">
+          Une question, une proposition de stage ou d'alternance ? N'hésite pas à me contacter.
+        </p>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Ton nom" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ton@email.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ton message" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+
+          <ul class="contact-links">
+            <li><a href="mailto:ton.email@example.com">✉️ ton.email@example.com</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ekko. Codé avec HTML, CSS &amp; JavaScript.</p>
+      <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
