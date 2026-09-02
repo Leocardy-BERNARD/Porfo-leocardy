@@ -1,8 +1,6 @@
-/* =========================================================
-   base.css — Variables, reset, typographie de base, layout
+/* base.css — Variables, reset, typographie de base, layout
    Ce fichier doit être chargé EN PREMIER : les autres fichiers
-   CSS utilisent les variables définies ici (--color-accent, etc.)
-   ========================================================= */
+   CSS utilisent les variables définies ici (--color-accent, etc.) */
 
 :root {
   /* Couleurs */
@@ -25,7 +23,7 @@
   --header-h: 72px;
 }
 
-/* ---------- Reset ---------- */
+/*  Reset */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -56,11 +54,11 @@ button { font: inherit; cursor: pointer; }
   padding: 0 24px;
 }
 
-/* ---------- Structure générique des sections ----------
+/* Structure générique des sections 
    Utilisée par : À propos, Compétences, Projets, Contact
    (chacune de ces sections a sa propre feuille CSS pour son
-   contenu spécifique, mais elles partagent cette base commune)
------------------------------------------------------------- */
+   contenu spécifique, mais elles partagent cette base commune) */
+
 .section { padding: 110px 0; }
 .section-alt { background: var(--color-bg-alt); }
 
@@ -83,7 +81,7 @@ button { font: inherit; cursor: pointer; }
   margin-bottom: 2.5em;
 }
 
-/* ---------- Responsive global ---------- */
+/* Responsive global */
 @media (max-width: 720px) {
   .section { padding: 72px 0; }
 }

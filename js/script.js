@@ -1,13 +1,12 @@
-// =========================================================
 // Portfolio — Ekko — script principal (vanilla JS)
-// =========================================================
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  /* ---------- Année dynamique dans le footer ---------- */
+  /* Année dynamique dans le footer */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Menu burger (mobile) ---------- */
+  /* Menu burger (mobile) */
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav");
 
@@ -26,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------- Lien de navigation actif au scroll ---------- */
+
+  /*  Lien de navigation actif au scroll */
   const sections = document.querySelectorAll("main section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", setActiveLink);
   setActiveLink();
 
-  /* ---------- Header : ombre légère au scroll ---------- */
+  /*  Header : ombre légère au scroll */
   const header = document.getElementById("header");
   const onScrollHeader = () => {
     if (!header) return;
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", onScrollHeader);
   onScrollHeader();
 
-  /* ---------- Animations d'apparition au scroll ---------- */
+  /*  Animations d'apparition au scroll*/
   const revealTargets = document.querySelectorAll(
     ".section, .skill-card, .project-card, .about-grid, .contact-grid"
   );
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   revealTargets.forEach((el) => observer.observe(el));
 
-  /* ---------- Retour en haut ---------- */
+  /*  Retour en haut */
   const backToTop = document.getElementById("back-to-top");
   if (backToTop) {
     backToTop.addEventListener("click", () => {
@@ -84,13 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------- Formulaire de contact ----------
+  /*  Formulaire de contact
      Pas de backend ici : ce formulaire affiche juste un message
      de confirmation côté client. Pour qu'il envoie réellement des
      emails une fois déployé, branche-le sur un service gratuit
      compatible sites statiques (ex : Cloudflare Pages Functions,
-     Formspree, ou Web3Forms) — voir le README pour les instructions.
-  ------------------------------------------------- */
+     Formspree, ou Web3Forms) — voir le README pour les instructions.*/
   const form = document.getElementById("contact-form");
   const formNote = document.getElementById("form-note");
 

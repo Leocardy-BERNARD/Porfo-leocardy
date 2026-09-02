@@ -1,6 +1,4 @@
-/* =========================================================
-   contact.css — Section Contact
-   ========================================================= */
+/* contact.css — Section Contact */
 
 .contact-grid {
   display: grid;
@@ -58,7 +56,7 @@
 }
 .contact-links a:hover { border-color: var(--color-accent); }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 860px) {
   .contact-grid { grid-template-columns: 1fr; }
 }

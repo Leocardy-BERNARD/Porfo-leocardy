@@ -1,6 +1,4 @@
-/* =========================================================
-   header.css — En-tête + navigation + menu burger mobile
-   ========================================================= */
+/* header.css — En-tête + navigation + menu burger mobile */
 
 .site-header {
   position: fixed;
@@ -73,7 +71,7 @@
 .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ---------- Responsive : menu mobile ---------- */
+/*  Responsive : menu mobile */
 @media (max-width: 720px) {
   .nav {
     position: fixed;

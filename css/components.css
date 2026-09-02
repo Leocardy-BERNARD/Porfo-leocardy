@@ -1,9 +1,7 @@
-/* =========================================================
-   components.css — Éléments réutilisés dans plusieurs sections
-   (boutons, badges de tags) — dépend de base.css
-   ========================================================= */
+/* components.css — Éléments réutilisés dans plusieurs sections
+   (boutons, badges de tags) — dépend de base.css */
 
-/* ---------- Boutons ---------- */
+/* Boutons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -29,7 +27,7 @@
 }
 .btn-outline:hover { border-color: var(--color-accent); }
 
-/* ---------- Badges / tags ---------- */
+/* Badges / tags */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +44,7 @@
 }
 .tag-list-sm li { font-size: 0.72rem; padding: 4px 10px; }
 
-/* ---------- Animations d'apparition au scroll ---------- */
+/*  Animations d'apparition au scroll */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
