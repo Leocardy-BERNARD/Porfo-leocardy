@@ -1,0 +1,89 @@
+/* =========================================================
+   base.css — Variables, reset, typographie de base, layout
+   Ce fichier doit être chargé EN PREMIER : les autres fichiers
+   CSS utilisent les variables définies ici (--color-accent, etc.)
+   ========================================================= */
+
+:root {
+  /* Couleurs */
+  --color-bg: #0b0d12;
+  --color-bg-alt: #10131a;
+  --color-surface: #161a23;
+  --color-border: #262b38;
+  --color-text: #e9ecf3;
+  --color-text-muted: #9aa2b4;
+  --color-accent: #6c8bff;
+  --color-accent-2: #7ef0c0;
+
+  /* Typo */
+  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --max-width: 1100px;
+  --radius: 14px;
+  --header-h: 72px;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+
+p { margin: 0 0 1em; color: var(--color-text-muted); }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Structure générique des sections ----------
+   Utilisée par : À propos, Compétences, Projets, Contact
+   (chacune de ces sections a sa propre feuille CSS pour son
+   contenu spécifique, mais elles partagent cette base commune)
+------------------------------------------------------------ */
+.section { padding: 110px 0; }
+.section-alt { background: var(--color-bg-alt); }
+
+.section-eyebrow {
+  color: var(--color-accent-2);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  margin-bottom: 0.8em;
+}
+
+.section-intro {
+  max-width: 620px;
+  margin-bottom: 2.5em;
+}
+
+/* ---------- Responsive global ---------- */
+@media (max-width: 720px) {
+  .section { padding: 72px 0; }
+}
