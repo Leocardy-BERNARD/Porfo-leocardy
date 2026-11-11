@@ -1,0 +1,158 @@
+.page-header {
+  padding: calc(var(--header-h) + 72px) 0 64px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(108, 139, 255, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(126, 240, 192, 0.10), transparent 40%);
+}
+
+.page-header h1 {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  font-weight: 700;
+  max-width: 820px;
+}
+
+.page-lead { max-width: 640px; }
+
+.veille-subject {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.veille-question {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.veille-question-label {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+.veille-question-text {
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.veille-method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.veille-method-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.veille-method-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.8em;
+}
+
+.veille-plain-list li {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.veille-plain-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+.veille-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  gap: 24px;
+}
+
+.veille-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 26px;
+  transition: border-color 0.2s ease;
+}
+.veille-card:hover { border-color: var(--color-accent); }
+
+.veille-meta {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.veille-source {
+  color: var(--color-accent-2);
+  font-weight: 600;
+}
+
+.veille-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.veille-block h4 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5em;
+}
+.veille-block p { margin: 0; font-size: 0.95rem; }
+
+.veille-points li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+.veille-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.veille-analysis {
+  background: rgba(108, 139, 255, 0.08);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.veille-analysis p { color: var(--color-text); }
+
+.veille-link {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: opacity 0.2s ease;
+}
+.veille-link:hover { opacity: 0.75; }
+
+@media (max-width: 860px) {
+  .veille-subject { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .page-header { padding: calc(var(--header-h) + 48px) 0 40px; }
+  .veille-card { padding: 20px; }
+}
